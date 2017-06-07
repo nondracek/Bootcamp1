@@ -3,13 +3,12 @@
 // HINT: lexical environment
 
 
-
 function y() {
+    function x() {
+        console.log(a);
+    }
     var a = 2;
     console.log(a);
-    function x() {
-    	console.log(a);
-	}
     x();
 }
 

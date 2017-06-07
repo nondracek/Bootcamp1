@@ -2,13 +2,11 @@
 // console logs must stay in their respective functions
 // HINT: lexical environment
 
-
-
 function y() {
     var a = 2;
     console.log(a);
     function x() {
-    	console.log(a);
+	    console.log(a);
 	}
     x();
 }
