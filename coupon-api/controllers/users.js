@@ -44,7 +44,7 @@ exports.createUser = (req, res, next) => {
         userData.phoneProvider = req.body['other-provider'];
     } else userData.phoneProvider = req.body.phoneProvider;
 
-    // validate phone
+    // validate phone xxx
     var phone = '';
     for (var i = 0; i < req.body.phone.length; i++) {
         if (!isNaN(req.body.phone[i]) && req.body.phone[i] !== ' ')
